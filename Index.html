@@ -102,6 +102,21 @@
 		.btn:hover {
 			background-color: #666;
 		}
+		
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
+		}
+		
+		.horizontal-line {
+		  border: none;
+		  border-top: 3px solid #000000;
+		  margin: 20px 0;
+		  transform: translateY(50px);
+		  transition: all 1s ease;
+		}
 	</style>
 </head>
 <body>
@@ -155,7 +170,8 @@
 		</div>
 	</div>
 
-<div class="section">
+<section>
+	<div class="section">
     <h2>Education</h2>
     <p>How important is education within industry and what can be done to close the skills gap?</p>
     <ul>
@@ -167,37 +183,51 @@
 		tool but this also allows for much better understanding of the concepts. As well as this allows for soft skills which will be very useful throughout the student’s career i.e., 
 		creativity, problem solving and team building </p>
     </ul>
+	<hr class="horizontal-line">
+	</div>
+<div class="section">
+    <p>Imperial College London</p>
+	<img src="Imperial.png" alt="Project 5 Image" class="center">
+    <ul>
+        <p>Imperial College London has a strong reputation in the field of robotics and is home to the Hamlyn Centre for Robotic Surgery and the Intelligent Robotics Laboratory. The Robotics Engineering program at Imperial College London offers a comprehensive curriculum that covers all aspects of robotics, including mechanical engineering, electronics, control, and artificial intelligence. </p>
+    </ul>
+	<hr class="horizontal-line">
+</div>
+<div class="section">
+    <p>University of Oxford</p>
+	<img src="Oxford.png" alt="Project 6 Image" class="center">
+    <ul>
+        <p>The University of Oxford has a world-renowned department of engineering science that offers an MSc in Robotics and Autonomous Systems. This program covers all aspects of robotics, including sensing and perception, control, planning and decision-making, and machine learning. Students also have access to state-of-the-art research facilities and a large network of industry partners. </p>
+    </ul>
+	<hr class="horizontal-line">
+</div>
+<div class="section">
+    <p>University of Bristol</p>
+	<img src="Bristol.png" alt="Project 7 Image" class="center">
+    <ul>
+        <p>The University of Bristol has a strong reputation in robotics and is home to the Bristol Robotics Laboratory, which is one of the largest robotics research centers in the UK. The Robotics MSc program at the University of Bristol covers a range of topics, including robotic design and control, robot vision, and machine learning.</p>
+    </ul>
+	<hr class="horizontal-line">
+</div>
+<div class="section">
+    <p>University of Edinburgh</p>
+	<img src="Edinburgh.png" alt="Project 8 Image" class="center">
+    <ul>
+        <p>The University of Edinburgh has a long history of excellence in robotics and is home to the Edinburgh Centre for Robotics, which is a joint venture between the University of Edinburgh and Heriot-Watt University. The Robotics and Autonomous Systems MSc program at the University of Edinburgh covers a wide range of topics, including robotics and AI, machine learning, and control systems.</p>
+    </ul>
+	<hr class="horizontal-line">
+</div>
+<div class="section">
+    <p>University of Manchester</p>
+	<img src="Manchester.png" alt="Project 9 Image" class="center">
+    <ul>
+        <p>The University of Manchester has a strong reputation in robotics and is home to the Robotics and Autonomous Systems MSc program. This program covers a range of topics, including robotics and control, computer vision, and artificial intelligence. Students also have access to the University's advanced robotics facilities, including the Robotics and AI Lab and the Manchester Robotics Facility.</p>
+    </ul>
 </div>
 
+</section>
 
-<script>
-	window.addEventListener('scroll', function() {
-		const sections = document.querySelectorAll('.section');
-		sections.forEach(section => {
-			const sectionPosition = section.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-			if (sectionPosition < windowHeight - 100) {
-				section.style.opacity = '1';
-				section.style.transform = 'translateY(0)';
-			} else {
-				section.style.opacity = '0';
-				section.style.transform = 'translateY(50px)';
-			}
-		});
+ <script src="script.js"></script> 
 
-		const projects = document.querySelectorAll('.project');
-		projects.forEach(project => {
-			const projectPosition = project.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-			if (projectPosition < windowHeight - 100) {
-				project.style.opacity = '1';
-				project.style.transform = 'translateX(0)';
-			} else {
-				project.style.opacity = '0';
-				project.style.transform = 'translateX(-50px)';
-			}
-		});
-	});
-</script>
 </body>
 </html>
